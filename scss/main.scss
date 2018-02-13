@@ -36,6 +36,7 @@ a {
         text-align: center;
         margin: -3vw 1% 100px 1%;
         text-transform: uppercase;
+        
     }
     .color-text-flow, .color-text-flow-hover:hover {
         color: rgba(0, 0, 0, 0);
@@ -44,6 +45,9 @@ a {
         @media screen and (max-width: 1100px) {
             -webkit-text-stroke: 1px rgba(0, 0, 0, 0);
         -moz-text-stroke: 1px rgba(0, 0, 0, 0);
+        }
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        color:white;
         }
 
     }

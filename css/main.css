@@ -42,6 +42,9 @@ a {
     .title .color-text-flow, .title .color-text-flow-hover:hover {
       -webkit-text-stroke: 1px transparent;
       -moz-text-stroke: 1px transparent; } }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .title .color-text-flow, .title .color-text-flow-hover:hover {
+      color: white; } }
 
 .title .color-text-flow, .title .color-text-flow-hover:hover {
   -webkit-animation-name: color-text-flow-keys;
