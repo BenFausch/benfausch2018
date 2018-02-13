@@ -1,7 +1,12 @@
 body {
   width: 100%;
+  min-height: 90vh;
+  box-sizing: border-box;
   background-color: #161616;
-  font-family: "Helvetica Neue", Helvetica, 'Lato', Arial, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, 'Lato', Arial, sans-serif;
+  overflow-x: hidden;
+  overflow-y: visible;
+  padding-bottom: 30px; }
 
 h2 {
   color: #c3c3c3;
@@ -18,10 +23,10 @@ a {
 .title h1 {
   color: white;
   display: block;
-  font-size: 15vw;
+  font-size: 12vw;
+  height: 14vw;
   text-align: center;
-  margin: -4vw 1% 1% 1%;
-  border-radius: 20px;
+  margin: -3vw 1% 100px 1%;
   text-transform: uppercase; }
 
 .title .color-text-flow, .title .color-text-flow-hover:hover {
@@ -32,14 +37,18 @@ a {
 .title .color-text-flow, .title .color-text-flow-hover:hover {
   -webkit-animation-name: color-text-flow-keys;
   animation-name: color-text-flow-keys;
-  -webkit-animation-duration: 50s;
-  animation-duration: 50s;
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
+  @media screen and (max-width: 1100px) {
+    .title .color-text-flow, .title .color-text-flow-hover:hover {
+      -webkit-animation-duration: 10s;
+      animation-duration: 10s; } }
 
 .title .container {
   position: absolute;
@@ -107,7 +116,7 @@ a {
       text-align: left;
       list-style: none;
       color: rgba(191, 0, 0, 0.95);
-      margin-top: -1px;
+      margin-top: -2px;
       -webkit-animation-name: change;
       -webkit-animation-duration: 6s;
       -webkit-animation-iteration-count: infinite;
@@ -127,7 +136,7 @@ a {
 /*CONTACT*/
 .contact {
   position: fixed;
-  left: 89vw;
+  left: 85vw;
   top: 96vh;
   width: 10%; }
   .contact .svg-inline--fa {
@@ -138,95 +147,184 @@ a {
       opacity: 0.5;
       color: rgba(130, 0, 130, 0.5); }
 
-/*WORK*/
-.work .svg-inline--fa, .projects .svg-inline--fa, .bio .svg-inline--fa {
-  color: #c3c3c3;
-  font-size: 2vw; }
-
-.work #work__array__title__box, .work #projects__array__title__box, .work #bio__array__title__box, .projects #work__array__title__box, .projects #projects__array__title__box, .projects #bio__array__title__box, .bio #work__array__title__box, .bio #projects__array__title__box, .bio #bio__array__title__box {
-  display: none; }
-
-.work label *, .projects label *, .bio label * {
-  transition: all 400ms; }
-
-.work label:hover *, .projects label:hover *, .bio label:hover * {
-  color: #51ff00 !important; }
-
-.work #work__array__title__box:checked ~ ul, .work #projects__array__title__box:checked ~ ul, .work #bio__array__title__box:checked ~ ul, .projects #work__array__title__box:checked ~ ul, .projects #projects__array__title__box:checked ~ ul, .projects #bio__array__title__box:checked ~ ul, .bio #work__array__title__box:checked ~ ul, .bio #projects__array__title__box:checked ~ ul, .bio #bio__array__title__box:checked ~ ul {
-  transition: all 600ms !important;
-  width: 100vw;
-  height: auto;
-  overflow-y: scroll;
-  opacity: 1; }
-  .work #work__array__title__box:checked ~ ul li, .work #projects__array__title__box:checked ~ ul li, .work #bio__array__title__box:checked ~ ul li, .projects #work__array__title__box:checked ~ ul li, .projects #projects__array__title__box:checked ~ ul li, .projects #bio__array__title__box:checked ~ ul li, .bio #work__array__title__box:checked ~ ul li, .bio #projects__array__title__box:checked ~ ul li, .bio #bio__array__title__box:checked ~ ul li {
+/*SECTIONS*/
+.work, .projects, .bio, .tools {
+  width: 90%;
+  margin: 0 auto; }
+  .work .svg-inline--fa, .projects .svg-inline--fa, .bio .svg-inline--fa, .tools .svg-inline--fa {
+    color: #c3c3c3;
+    font-size: 2vw; }
+  .work #work__array__title__box, .work #projects__array__title__box, .work #bio__array__title__box, .work #tools__array__title__box, .projects #work__array__title__box, .projects #projects__array__title__box, .projects #bio__array__title__box, .projects #tools__array__title__box, .bio #work__array__title__box, .bio #projects__array__title__box, .bio #bio__array__title__box, .bio #tools__array__title__box, .tools #work__array__title__box, .tools #projects__array__title__box, .tools #bio__array__title__box, .tools #tools__array__title__box {
+    display: none; }
+  .work label *, .projects label *, .bio label *, .tools label * {
+    transition: all 400ms; }
+  .work label:hover *, .projects label:hover *, .bio label:hover *, .tools label:hover * {
+    color: #51ff00 !important; }
+  .work #work__array__title__box:checked ~ ul, .work #projects__array__title__box:checked ~ ul, .work #bio__array__title__box:checked ~ ul, .work #tools__array__title__box:checked ~ ul, .projects #work__array__title__box:checked ~ ul, .projects #projects__array__title__box:checked ~ ul, .projects #bio__array__title__box:checked ~ ul, .projects #tools__array__title__box:checked ~ ul, .bio #work__array__title__box:checked ~ ul, .bio #projects__array__title__box:checked ~ ul, .bio #bio__array__title__box:checked ~ ul, .bio #tools__array__title__box:checked ~ ul, .tools #work__array__title__box:checked ~ ul, .tools #projects__array__title__box:checked ~ ul, .tools #bio__array__title__box:checked ~ ul, .tools #tools__array__title__box:checked ~ ul {
+    transition: all 600ms !important;
+    width: 100vw;
+    height: auto;
+    opacity: 1; }
+    .work #work__array__title__box:checked ~ ul li, .work #projects__array__title__box:checked ~ ul li, .work #bio__array__title__box:checked ~ ul li, .work #tools__array__title__box:checked ~ ul li, .projects #work__array__title__box:checked ~ ul li, .projects #projects__array__title__box:checked ~ ul li, .projects #bio__array__title__box:checked ~ ul li, .projects #tools__array__title__box:checked ~ ul li, .bio #work__array__title__box:checked ~ ul li, .bio #projects__array__title__box:checked ~ ul li, .bio #bio__array__title__box:checked ~ ul li, .bio #tools__array__title__box:checked ~ ul li, .tools #work__array__title__box:checked ~ ul li, .tools #projects__array__title__box:checked ~ ul li, .tools #bio__array__title__box:checked ~ ul li, .tools #tools__array__title__box:checked ~ ul li {
+      opacity: 1 !important;
+      transition: all 300ms ease-in;
+      transition-delay: 700ms; }
+  .work #bio__container, .projects #bio__container, .bio #bio__container, .tools #bio__container {
     opacity: 1 !important;
-    transition: all 300ms ease-in;
-    transition-delay: 700ms; }
-
-.work #bio__container, .projects #bio__container, .bio #bio__container {
-  opacity: 1 !important;
-  border: 2px solid #c3c3c3;
-  padding: 2% 5%;
-  border-radius: 10px;
-  display: block;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2%;
-  text-align: center;
-  font-size: 2vh;
-  line-height: 3vh;
-  font-weight: 300;
-  color: #c3c3c3 !important; }
-  .work #bio__container:hover, .projects #bio__container:hover, .bio #bio__container:hover {
-    color: #c3c3c3; }
-
-.work__array, .projects__array, .bio__array {
-  list-style: none;
-  width: 0px;
-  height: 0;
-  opacity: 0;
-  overflow: hidden;
-  border-top: 3px solid rgba(191, 0, 0, 0.3);
-  transition: all 0ms ease-in;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  padding-left: 0; }
-  .work__array__head, .projects__array__head, .bio__array__head {
-    z-index: 99; }
-  .work__array__head:hover, .projects__array__head:hover, .bio__array__head:hover {
-    background: rgba(0, 0, 0, 0.05);
-    color: rgba(191, 0, 0, 0.7) !important; }
-    .work__array__head:hover .svg-inline--fa, .projects__array__head:hover .svg-inline--fa, .bio__array__head:hover .svg-inline--fa {
-      color: rgba(191, 0, 0, 0.7) !important; }
-  .work__array__head:hover ~ p, .projects__array__head:hover ~ p, .bio__array__head:hover ~ p {
-    opacity: 1 !important;
-    border: 4px solid #c3c3c3;
+    border: 2px solid #c3c3c3;
     padding: 2% 5%;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.9) !important; }
-  .work__array li, .projects__array li, .bio__array li {
-    opacity: 0;
-    transition: all 0ms ease-in;
-    transition-delay: 0s;
-    color: #c3c3c3;
-    text-align: center; }
-    .work__array li h3, .projects__array li h3, .bio__array li h3 {
-      font-size: 1vw;
-      font-weight: 300 !important; }
-    .work__array li p, .projects__array li p, .bio__array li p {
-      width: 60vw;
-      font-weight: 300 !important;
-      opacity: 0;
-      transition: all 500ms;
-      position: absolute;
-      left: 20vw;
-      display: inline;
-      text-align: center;
-      font-size: 2vh;
-      line-height: 2.5vh; }
-    .work__array li .svg-inline--fa, .projects__array li .svg-inline--fa, .bio__array li .svg-inline--fa {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.75vh;
+    line-height: 2.5vh;
+    font-weight: 300;
+    color: #c3c3c3 !important; }
+    .work #bio__container:hover, .projects #bio__container:hover, .bio #bio__container:hover, .tools #bio__container:hover {
       color: #c3c3c3; }
+  .work .bio__array__head, .projects .bio__array__head, .bio .bio__array__head, .tools .bio__array__head {
+    float: right;
+    width: 56%;
+    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 4%;
+    padding-top: 2%; }
+  .work__array, .projects__array, .bio__array, .tools__array {
+    list-style: none;
+    width: 100% !important;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin: 0;
+    border-top: 3px solid rgba(191, 0, 0, 0.3);
+    padding-top: 1%;
+    transition: all 0ms ease-in;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding-left: 0; }
+    .work__array__head, .projects__array__head, .bio__array__head, .tools__array__head {
+      z-index: 99; }
+    .work__array__head:hover, .projects__array__head:hover, .bio__array__head:hover, .tools__array__head:hover {
+      cursor: pointer;
+      background: rgba(0, 0, 0, 0.05);
+      color: rgba(191, 0, 0, 0.7) !important; }
+      .work__array__head:hover .svg-inline--fa, .projects__array__head:hover .svg-inline--fa, .bio__array__head:hover .svg-inline--fa, .tools__array__head:hover .svg-inline--fa {
+        color: rgba(191, 0, 0, 0.7) !important; }
+    .work__array__head:hover ~ p, .projects__array__head:hover ~ p, .bio__array__head:hover ~ p, .tools__array__head:hover ~ p {
+      opacity: 1 !important;
+      border: 4px solid #c3c3c3;
+      padding: 2% 5%;
+      border-radius: 10px;
+      height: auto;
+      background-color: rgba(0, 0, 0, 0.9) !important; }
+    .work__array li, .projects__array li, .bio__array li, .tools__array li {
+      opacity: 0;
+      transition: all 0ms ease-in;
+      transition-delay: 0s;
+      color: #c3c3c3;
+      text-align: center; }
+      .work__array li img, .projects__array li img, .bio__array li img, .tools__array li img {
+        margin: 2%;
+        float: left;
+        height: 100%;
+        padding: 0%;
+        border: 2px solid #c3c3c3;
+        border-radius: 10px;
+        width: 35%; }
+      .work__array li h3, .projects__array li h3, .bio__array li h3, .tools__array li h3 {
+        font-size: 1vw;
+        font-weight: 300 !important; }
+      .work__array li p, .projects__array li p, .bio__array li p, .tools__array li p {
+        width: 60vw;
+        font-weight: 300 !important;
+        opacity: 0;
+        transition: all 500ms;
+        position: absolute;
+        height: 0px;
+        overflow: hidden;
+        margin: 0;
+        left: 20vw;
+        display: inline;
+        text-align: center;
+        font-size: 2vh;
+        line-height: 2.5vh; }
+      .work__array li .svg-inline--fa, .projects__array li .svg-inline--fa, .bio__array li .svg-inline--fa, .tools__array li .svg-inline--fa {
+        color: #c3c3c3; }
+    @media screen and (max-width: 1100px) {
+      .work__array, .projects__array, .bio__array, .tools__array {
+        display: block;
+        margin-top: 0.5em; }
+        .work__array__head:hover, .projects__array__head:hover, .bio__array__head:hover, .tools__array__head:hover {
+          color: #c3c3c3 !important; }
+          .work__array__head:hover ~ p, .work__array__head:hover .svg-inline--fa, .projects__array__head:hover ~ p, .projects__array__head:hover .svg-inline--fa, .bio__array__head:hover ~ p, .bio__array__head:hover .svg-inline--fa, .tools__array__head:hover ~ p, .tools__array__head:hover .svg-inline--fa {
+            color: #c3c3c3 !important;
+            padding: 0;
+            background-color: none;
+            background: none !important;
+            border: none; }
+        .work__array li, .projects__array li, .bio__array li, .tools__array li {
+          border-bottom: 2px solid #c3c3c3;
+          width: 100%;
+          margin-top: 1em !important;
+          margin-bottom: 2em !important;
+          padding-bottom: 2em !important; }
+          .work__array li .svg-inline--fa, .projects__array li .svg-inline--fa, .bio__array li .svg-inline--fa, .tools__array li .svg-inline--fa {
+            font-size: 2em; }
+          .work__array li h3, .projects__array li h3, .bio__array li h3, .tools__array li h3 {
+            font-size: 1.25em; }
+          .work__array li p, .projects__array li p, .bio__array li p, .tools__array li p {
+            font-size: 1.05em;
+            line-height: 1.5em;
+            display: block;
+            height: auto;
+            opacity: 1;
+            width: 100%;
+            position: relative;
+            left: 0; } }
+  @media screen and (max-width: 1100px) {
+    .work h2, .work .svg-inline--fa, .projects h2, .projects .svg-inline--fa, .bio h2, .bio .svg-inline--fa, .tools h2, .tools .svg-inline--fa {
+      font-size: 6vw; } }
+
+@media screen and (max-width: 1100px) {
+  .bio__array li {
+    border: none; }
+    .bio__array li .bio__array__head {
+      width: 100%;
+      float: none;
+      display: block; }
+    .bio__array li #bio__container, .bio__array li img {
+      width: 90%;
+      float: none;
+      padding: 3%;
+      display: block;
+      margin: 0 0 3vw 0;
+      font-size: 1.05em;
+      line-height: 1.35em; }
+  .content {
+    display: none; }
+  .contact {
+    position: fixed;
+    left: 0;
+    top: 92vh;
+    width: 100%;
+    background-color: rgba(191, 0, 0, 0.75);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box; }
+    .contact .svg-inline--fa {
+      font-size: 6vw;
+      margin: 2%; } }
+
+#hola {
+  position: absolute;
+  top: 100vw;
+  color: #777;
+  font-size: 10px;
+  font-family: monospace; }
+  @media screen and (max-width: 1100px) {
+    #hola {
+      display: none; } }
 
 /*KEYFRAMES*/
 @-webkit-keyframes opacity {
