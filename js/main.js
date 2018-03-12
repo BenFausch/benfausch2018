@@ -10,7 +10,7 @@ console.log(`%c ________________________________________
 YOU HAVE FOUND TEH SACRED CODE COW
 DONATE $30 CRYPTO FOR GOOD TIMES
 
-NO JS ON THIS PAGE, ONLY BAD MOFO CSS DAWG
+NO FANCY JS ON THIS PAGE, ONLY BAD MOFO CSS DAWG
                 `, "font-family:Helvetica; font-size:36px; color:#7FFF00;")
 
   if (document.documentMode || /Edge/.test(navigator.userAgent)) {
