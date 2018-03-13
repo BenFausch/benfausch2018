@@ -289,19 +289,20 @@ a {
                 font-weight: 300!important;
             }
             p {
-                width: 60vw;
-                font-weight: 300!important;
-                opacity: 0;
-                transition: all 500ms;
-                position: absolute;
-                height: 0px;
-                overflow: hidden;
-                margin: 0;
-                left: 20vw;
                 display: inline;
-                text-align: center;
                 font-size: 2vh;
+                font-weight: 300!important;
+                height: 0px;
+                left: 20vw;
                 line-height: 2.5vh;
+                margin: 0;
+                margin-top:1em;
+                opacity: 0;
+                overflow: hidden;
+                position: absolute;
+                text-align: center;
+                transition: all 500ms;
+                width: 60vw;
             }
             .svg-inline--fa {
                 color: #c3c3c3
