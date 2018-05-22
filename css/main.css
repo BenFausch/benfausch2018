@@ -245,7 +245,7 @@ a {
         border-radius: 10px;
         width: 35%; }
       .work__array li h3, .projects__array li h3, .bio__array li h3, .tools__array li h3 {
-        font-size: 1vw;
+        font-size: 0.75vw;
         font-weight: 300 !important; }
       .work__array li p, .projects__array li p, .bio__array li p, .tools__array li p {
         display: inline;
