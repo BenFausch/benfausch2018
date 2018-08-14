@@ -299,7 +299,7 @@ a {
         }
         &__head:hover {
             cursor: pointer;
-            background: rgba(0, 0, 0, 0.05);
+            // background: rgba(0, 0, 0, 0.05);
             .svg-inline--fa {
                 color: $red-hover!important;
             }
@@ -311,7 +311,7 @@ a {
             padding: 2% 5%;
             border-radius: 10px;
             height: auto;
-            background-color: $black-semi!important;
+            // background-color: $black-semi!important;
         }
         li {
             opacity: 0;
@@ -338,9 +338,9 @@ a {
                 font-weight: 300!important;
                 height: 0px;
                 left: 10vw;
-                line-height: 2.5vh;
+                line-height: 32px;
                 margin: 0;
-                margin-top: 1em;
+                margin-top: 2em;
                 opacity: 0;
                 overflow: hidden;
                 position: absolute;
