@@ -1,12 +1,11 @@
 @import "colors";
 @import "animations";
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
-
 body {
     width: 100%;
     min-height: 90vh;
     box-sizing: border-box;
-    background-color: $bg;   
+    background-color: $bg;
     font-family: "Roboto Slab", serif;
     overflow-x: hidden;
     overflow-y: visible;
@@ -17,17 +16,16 @@ body {
         margin-top: 30px;
     }
 }
-.scrim{
-    position:fixed;
-    z-index:-1;
-    // background:url("../img/bg.gif");
-    background-size:cover;
-    background-repeat:no-repeat;
-    width:100vw;
-    height:110vh;
-    top:0px;
-    left:0px;
-    opacity:0.4;
+.scrim {
+    position: fixed;
+    z-index: -1; // background:url("../img/bg.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 110vh;
+    top: 0px;
+    left: 0px;
+    opacity: 0.4;
 }
 h2 {
     color: $text-color;
@@ -67,8 +65,8 @@ a {
     .color-text-flow, .color-text-flow-hover:hover {
         -webkit-animation-name: simple-color-flow;
         animation-name: simple-color-flow;
-        -webkit-animation-duration: 7s;
-        animation-duration: 7s;
+        -webkit-animation-duration: 5s;
+        animation-duration: 5s;
         @media screen and (max-width: 1100px) {
             -webkit-animation-duration: 10s;
             animation-duration: 10s;
@@ -130,7 +128,7 @@ a {
         }
         &:after, &:before {
             position: absolute;
-            top: -5px;
+            top: 0px;
             color: $turquoise;
             font-size: 40px;
             line-height: 40px;
@@ -168,28 +166,25 @@ a {
         }
     }
 }
-
-.intro{
-    background:$background-semi-opaque;
-    border:1px solid $text-color;
-    border-radius:10px;
+.intro {
+    border: 3px solid #2F2415;
+    border-radius: 10px;
     font-size: 28px;
-    font-weight:300;
-    line-height: 40px;
-    color: $text-color;
-    width:50%;
-    min-width:700px;
-    padding:40px;
-    margin:150px auto 100px auto;
-    text-align:center;
-    img{
-        display:block;
-        width:50%;
-        margin-left:auto;
-    margin-right:auto;
-    margin-top:50px;
-    
-    border-radius:40px;
+    font-weight: 300;
+    line-height: 46px;
+    color: #2F2415;
+    width: 65%;
+    min-width: 700px;
+    padding: 40px;
+    margin: 150px auto 100px auto;
+    text-align: center;
+    img {
+        display: block;
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        border-radius: 25px;
     }
 }
 /////////////////////////////////////////////////////////
@@ -229,7 +224,7 @@ a {
     .svg-inline--fa {
         color: $text-color;
         font-size: 2vw;
-        margin-right:10px;
+        margin-right: 10px;
     }
     #work__array__title__box, #projects__array__title__box, #bio__array__title__box, #tools__array__title__box {
         display: none;
@@ -244,11 +239,11 @@ a {
         transition: all 600ms!important;
         width: 100vw;
         height: auto;
-        min-height: 350px; 
+        min-height: 350px;
         opacity: 1;
         li {
             opacity: 1!important;
-            padding:0px 5px;
+            padding: 0px 5px;
             transition: all 300ms ease-in;
             transition-delay: 700ms;
         }
@@ -262,14 +257,14 @@ a {
     }
     #bio__container {
         opacity: 1 !important;
-        background:$background-semi-opaque;
-        border: 2px solid $text-color;
+        // background: $background-semi-opaque;
+        border: 4px solid $text-color;
         padding: 2% 5%;
         border-radius: 10px;
         display: inline-block;
         text-align: center;
         font-size: 18px;
-        line-height: 26px;
+        line-height: 30px;
         font-weight: 300;
         color: $text-color !important;
         &:hover {
@@ -292,7 +287,7 @@ a {
         opacity: 0;
         overflow: hidden;
         margin: 0;
-        margin-left:-5px;
+        margin-left: -5px;
         border-top: 3px solid $red-hover;
         padding-top: 1%;
         transition: all 0ms ease-in;
@@ -327,7 +322,7 @@ a {
             img {
                 margin: 2%;
                 float: left;
-                height: 100%;
+                // height: 100%;
                 padding: 0%;
                 border: 2px solid $text-color;
                 border-radius: 10px;
@@ -402,15 +397,15 @@ a {
     }
 }
 @media screen and (max-width: 1100px) {
-    .intro{
-        width:85%;
-        font-size:18px;
-        line-height:1.5em;
-        padding:40px 15px;
-        margin-top:0;
-        min-width:auto;
-        img{
-            width:100%;
+    .intro {
+        width: 85%;
+        font-size: 18px;
+        line-height: 1.5em;
+        padding: 40px 15px;
+        margin-top: 0;
+        min-width: auto;
+        img {
+            width: 100%;
         }
     }
     .bio__array {
@@ -452,7 +447,7 @@ a {
 }
 #hola {
     position: absolute;
-    top: 225vh;
+    top: 325vh;
     color: $grey;
     font-size: 10px;
     font-family: monospace;

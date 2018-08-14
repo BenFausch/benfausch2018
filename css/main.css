@@ -686,8 +686,8 @@ a {
 .title .color-text-flow, .title .color-text-flow-hover:hover {
   -webkit-animation-name: simple-color-flow;
   animation-name: simple-color-flow;
-  -webkit-animation-duration: 7s;
-  animation-duration: 7s;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
@@ -745,7 +745,7 @@ a {
       right: 0; }
     .content__container:after, .content__container:before {
       position: absolute;
-      top: -5px;
+      top: 0px;
       color: #121221;
       font-size: 40px;
       line-height: 40px;
@@ -779,25 +779,24 @@ a {
         font-weight: 300; }
 
 .intro {
-  background: rgba(0, 0, 0, 0.5);
-  border: 1px solid #2F2415;
+  border: 3px solid #2F2415;
   border-radius: 10px;
   font-size: 28px;
   font-weight: 300;
-  line-height: 40px;
+  line-height: 46px;
   color: #2F2415;
-  width: 50%;
+  width: 65%;
   min-width: 700px;
   padding: 40px;
   margin: 150px auto 100px auto;
   text-align: center; }
   .intro img {
     display: block;
-    width: 50%;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    border-radius: 40px; }
+    border-radius: 25px; }
 
 /*SVG Globals*/
 .svg-inline--fa {
@@ -850,14 +849,13 @@ a {
     transform: rotate(90deg); }
   .work #bio__container, .projects #bio__container, .bio #bio__container, .tools #bio__container {
     opacity: 1 !important;
-    background: rgba(0, 0, 0, 0.5);
-    border: 2px solid #2F2415;
+    border: 4px solid #2F2415;
     padding: 2% 5%;
     border-radius: 10px;
     display: inline-block;
     text-align: center;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 30px;
     font-weight: 300;
     color: #2F2415 !important; }
     .work #bio__container:hover, .projects #bio__container:hover, .bio #bio__container:hover, .tools #bio__container:hover {
@@ -908,7 +906,6 @@ a {
       .work__array li img, .projects__array li img, .bio__array li img, .tools__array li img {
         margin: 2%;
         float: left;
-        height: 100%;
         padding: 0%;
         border: 2px solid #2F2415;
         border-radius: 10px;
@@ -1009,7 +1006,7 @@ a {
 
 #hola {
   position: absolute;
-  top: 225vh;
+  top: 325vh;
   color: #777;
   font-size: 10px;
   font-family: monospace; }
