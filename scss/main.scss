@@ -69,10 +69,6 @@ a {
         animation-name: simple-color-flow;
         -webkit-animation-duration: 5s;
         animation-duration: 5s;
-        @media screen and (max-width: 1100px) {
-            -webkit-animation-duration: 10s;
-            animation-duration: 10s;
-        }
         -webkit-animation-iteration-count: infinite;
         animation-iteration-count: infinite;
         -webkit-animation-direction: alternate;
@@ -178,7 +174,7 @@ a {
     width: 65%;
     min-width: 700px;
     padding: 40px;
-    margin: 150px auto 100px auto;
+    margin: 9vw auto;
     text-align: center;
     img {
         display: block;
@@ -410,6 +406,7 @@ a {
             width: 100%;
         }
     }
+    
     .bio__array {
         li {
             border: none;
@@ -435,7 +432,7 @@ a {
     .contact {
         position: fixed;
         left: 0;
-        top: 92vh;
+        top: 93vh;
         width: 100%;
         background-color: $red-hover;
         text-align: center;
@@ -447,6 +444,7 @@ a {
         }
     }
 }
+.scrim{display:none;}
 #hola {
     position: absolute;
     top: 325vh;
@@ -456,4 +454,17 @@ a {
     @media screen and (max-width: 1100px) {
         display:none;
     }
+}
+
+@media only screen and (max-width: 767px){
+.title{
+        width:70%;
+        margin-left:auto;
+        margin-right:auto;
+        h1{
+            line-height:1.25em;
+            font-size:14vw;
+        }
+    }
+    
 }
